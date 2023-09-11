@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con todas las etiquetas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        input[type="url"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #f5eded;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="/index.html">ir a pagina principal</a>
+        </li>
+    </ul>
+    <div class="container">
+        <h2>Formulario con Todas las Etiquetas</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            <div class="form-group">
+                <label for="sitio-web">Sitio Web:</label>
+                <input type="url" id="sitio-web" name="sitio-web" required>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="seleccion">Selección:</label>
+                <select id="seleccion" name="seleccion" required>
+                    <option value="opcion1"></option>
+                    <option value="opcion2">si</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>seleccione su sexo:</label>
+                <input type="radio" id="opcion1" name="opcion_radio" value="opcion1" required>
+                <label for="opcion1">masculino</label>
+                <input type="radio" id="opcion2" name="opcion_radio" value="opcion2" required>
+                <label for="opcion2">femenino</label>
+            </div>
+            <div class="form-group">
+                <label>acepte terminos y condiciones:</label>
+                <input type="checkbox" id="opcionA" name="opcion_checkbox[]" value="opcionA" required>
+                <label for="opcionA">politica legal </label>
+                <input type="checkbox" id="opcionB" name="opcion_checkbox[]" value="opcionB" required>
+                <label for="opcionB">reglas y condiciones</label>
+            </div>
+            <button type="submit">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Enviar</a>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
